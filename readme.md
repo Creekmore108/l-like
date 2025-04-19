@@ -14,7 +14,7 @@ Via Composer
 $ composer require creekmore108/l-like
 ```
 
-Import Laravel Block into your User model and add the trait.
+Import LLike into your User model and add the trait.
 
 ```php
 namespace App\Models;
