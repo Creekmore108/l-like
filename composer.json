@@ -1,0 +1,51 @@
+{
+    "name": "creekmore108/l-like",
+    "description": "A User can like another User",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Steven Creekmore",
+            "email": "creekmore108@gmail.com",
+            "homepage": "https://github.com/creekmore108"
+        }
+    ],
+    "minimum-stability": "stable",
+    "homepage": "https://github.com/creekmore108/l-like",
+    "keywords": [
+        "Laravel",
+        "LLike",
+        "Like users"
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "php": "^8.1",
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Creekmore108\\LLike\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Creekmore108\\LLike\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-f": "vendor/bin/phpunit --filter"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Creekmore108\\LLike\\LLikeServiceProvider"
+            ],
+            "aliases": {
+                "LBlock": "Creekmore108\\LLike\\Facades\\LLike"
+            }
+        }
+    }
+}
