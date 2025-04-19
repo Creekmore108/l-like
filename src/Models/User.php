@@ -3,11 +3,11 @@
 namespace Creekmore108\LBlock\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Creekmore108\LBlock\LBlock;
+use Creekmore108\LLike\LLike;
 
 class User extends Authenticatable
 {
-    use LBlock;
+    use LLike;
 
     public $timestamps = false;
 

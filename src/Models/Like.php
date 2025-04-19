@@ -1,28 +1,28 @@
 <?php
 
-namespace Creekmore108\LBlock\Models;
+namespace Creekmore108\LLike\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class Block extends Model
+class Like extends Model
 {
     use HasFactory;
 
-    protected $table = 'blocks';
+    protected $table = 'likes';
 
     protected $fillable = [
         'user_id',
-        'blocking_id',
+        'liking_id',
     ];
 
-    public function blocking(): BelongsTo
+    public function liking(): BelongsTo
     {
-        return $this->belongsTo(config('auth.providers.users.model'), 'blocking_id');
+        return $this->belongsTo(config('auth.providers.users.model'), 'liking_id');
     }
 
-    public function blockers(): BelongsTo
+    public function likers(): BelongsTo
     {
         return $this->belongsTo(config('auth.providers.users.model'), 'user_id');
     }
