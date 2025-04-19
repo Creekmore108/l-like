@@ -1,6 +1,6 @@
 <?php
 
-namespace Creekmore108\LBlock\Models;
+namespace Creekmore108\LLike\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Creekmore108\LLike\LLike;
